@@ -7,14 +7,12 @@ public class UniqueInt {
 	 */
 	
 	public static void main(String[] args){
-		Random rand = new Random();
-		int[] test = new int[100];
+		int[] test = {3, 2, 5, 6, 4, 5, 4, 2, 1, 1};
+		int[] uniques = findUniques(test);
 		
-		for(int i = 0; i < test.length; i++){
-			test[i] = rand.nextInt(50);
+		for(int i = 0; i < uniques.length; i++){
+			System.out.println(uniques[i]);
 		}
-		
-		System.out.println(findUniques(test).length);
 	}
 	
 	static int[] findUniques(int[] a){
@@ -35,6 +33,10 @@ public class UniqueInt {
 		}
 		
 		int[] uniques = new int[tmp.size()];
+		
+		for(int i = 0; i < uniques.length; i++){
+			uniques[i] = tmp.get(i);
+		}
 		
 		return uniques;
 	}

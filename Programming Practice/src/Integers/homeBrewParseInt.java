@@ -4,7 +4,7 @@ public class homeBrewParseInt{
 
 	public static void main(String[] args) {
 		System.out.println(homeBrewParseInt.parseInt("-234891"));
-		System.out.println(homeBrewParseInt.parseInt("not A number"));
+		System.out.println(homeBrewParseInt.parseInt("not a number"));
 	}
 	
 	static int parseInt(String s){

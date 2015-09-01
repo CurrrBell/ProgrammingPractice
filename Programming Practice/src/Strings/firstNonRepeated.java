@@ -18,7 +18,7 @@ public class firstNonRepeated {
 				if(i == j){
 					
 				}
-					
+					//test to fix name
 				else if(sa[i] == sa[j]){
 					isUnique = false;
 					break;

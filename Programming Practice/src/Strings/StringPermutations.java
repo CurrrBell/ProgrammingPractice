@@ -8,16 +8,14 @@ public class StringPermutations {
 
 	}
 	
-	static String[] findPermutations(String s){		
+	static String[] findPermutations(String[] s){		
+		if(s.length == 1)
+			return s;
+		
 		ArrayList<String> tmp = new ArrayList<String>();
 		String[] permutations;
-		char[] characters = s.toCharArray();
 		
-		if(s.length() == 1){
-			permutations = new String[1];
-			permutations[0] = s;
-			return permutations;
-		}
+		
 		permutations = new String[tmp.size()];
 		
 		for(int i = 0; i < permutations.length; i++){
